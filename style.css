@@ -88,7 +88,24 @@ h1 em { color: var(--rose); font-weight: 400; }
 .gift__decoration--left { transform: rotate(-12deg) translateY(35px); }
 .gift__decoration--right { transform: rotate(13deg) translateY(36px); }
 
-.envelope-wrap { width: min(440px, 100%); padding-top: 48px; text-align: center; }
+.envelope-wrap { width: min(440px, 100%); padding-top: 24px; text-align: center; }
+.envelope-date {
+  display: inline-flex;
+  align-items: center;
+  gap: .55em;
+  margin: 0 0 18px;
+  color: var(--rose);
+  font-family: "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive;
+  font-size: clamp(14px, 1.5vw, 17px);
+  font-weight: 600;
+  letter-spacing: .08em;
+  transform: rotate(-2deg);
+}
+.envelope-date::before, .envelope-date::after {
+  content: "♡";
+  color: #d6a35b;
+  font-size: .85em;
+}
 .envelope {
   display: block;
   position: relative;
@@ -215,7 +232,7 @@ h2 { margin: 0 0 25px; font-family: Georgia, serif; font-size: clamp(35px, 5vw, 
   .gift__decoration { width: 40px; flex: 0 0 40px; }
   .gift__decoration--left { transform: rotate(-15deg) translate(14px, 66px); }
   .gift__decoration--right { transform: rotate(15deg) translate(-14px, 66px); }
-  .envelope-wrap { min-width: 0; padding-top: 33px; }
+  .envelope-wrap { min-width: 0; padding-top: 16px; }
   .envelope { height: auto; aspect-ratio: 380 / 238; }
   .envelope__note { height: 75%; padding: 14px; font-size: 15px; }
   .envelope__seal { top: 45%; left: calc(50% - 18px); width: 36px; height: 36px; font-size: 23px; }
